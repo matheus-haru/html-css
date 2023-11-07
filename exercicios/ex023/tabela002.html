@@ -22,6 +22,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
         thead {
             background-color: rgba(0, 0, 0, 0.7);
             color: white;
@@ -40,6 +47,7 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
+        Caption
         Thead
             tr, td, th
         Tbody
@@ -48,10 +56,11 @@
             tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -166,7 +175,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
