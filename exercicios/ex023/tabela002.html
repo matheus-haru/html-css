@@ -15,6 +15,7 @@
             font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -30,8 +31,14 @@
         }
 
         thead {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: #4C4C4C;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #4C4C4C;
         }
         
         tfoot {
